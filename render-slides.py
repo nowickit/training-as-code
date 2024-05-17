@@ -38,7 +38,11 @@ def merge_files(file_list):
     merged_content = ""
     for file_path in file_list:
         with open("rendered/"+file_path, 'r') as file:
-            merged_content += "<section>" + "\n" + file.read() +  "\n" + "</section>" + "\n"
+            merged_content += '<section data-markdown '
+            merged_content += 'data-separator="---" data-separator-vertical="--"'
+            merged_content += 'data-background-image="img/bg.png" data-background-size="1000px"'
+            merged_content += '>'
+            merged_content += "\n" + file.read() +  "\n" + "</section>" + "\n"
     return merged_content
 
 def replace_sections_in_slides(merged_content, slides_file):
