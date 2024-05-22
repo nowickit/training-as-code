@@ -1,17 +1,10 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
-
-		<title>reveal.js – The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
+		<title>Splunk</title>
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="../revealjs/dist/reset.css">
@@ -25,14 +18,10 @@
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				
-			{{sections}}
-
+					{{sections}}
 			</div>
-
 		</div>
 
 		<script src="../revealjs/dist/reveal.js"></script>
@@ -42,20 +31,22 @@
 		<script src="../revealjs/plugin/markdown/markdown.js"></script>
 		<script src="../revealjs/plugin/highlight/highlight.js"></script>
 		<script>
-
 			// Also available as an ES module, see:
 			// https://../revealjs.com/initialization/
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				center: true,
+				center: false,
 				hash: true,
-
+				slideNumber: true,
+				embedded: false,
+				width: 1000,
+ 				height: 600,
+				minScale: 1.0,
+  				maxScale: 1.0,
 				// Learn about plugins: https://../revealjs.com/plugins/
 				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
 			});
-
 		</script>
-
 	</body>
 </html>
