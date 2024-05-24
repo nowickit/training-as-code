@@ -1,7 +1,6 @@
 {
-    "variable1": "value1",
-    "variable2": "value2",
-    "variable3": "value3",
-    "variable4": "value4",
-    "variable5": "value5"
+    "instructor": "Tomasz Nowicki",
+    "lab_user": "lab_User2024\n",
+    "lab_pass": "jBvyWbPlUs\n",
+    "env_url": "https://app.eu0.signalfx.com\n"
 }

@@ -1,17 +1,10 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
-
-		<title>reveal.js – The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
+		<title>Splunk</title>
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="../revealjs/dist/reset.css">
@@ -25,41 +18,107 @@
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				
-			<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1000px"data-separator-notes="^Note:">
-## Demo 0
-Slide 0
-This is test on variable1: value2.
-</section>
-<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1000px"data-separator-notes="^Note:">
-## Demo 1
-Slide 1
-This is test on variable1: value1.
+					<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+## Splunk Infrastructure Monitoring
+### Navigators
+In this section, you will learn how to orient and explore different layers of your tech stacks using **navigators** in Splunk Infrastructure Monitoring.
 
-Note:
-Speaker notes test 1
-
---
-
-## Demo 1
-
-Slide 2
-Note:
-Speaker notes test 2
-
+Tomasz Nowicki
 
 ---
 
-## Demo 1
-Slide 3
+### What Is Navigator?
+
+A navigator is a collection of **resources** that lets you monitor metrics across various instances of integration and detect outliers among the instances of that integration.
+
+**Resources** include but are not limited to:
+![](img/navigator.png)
+
+- Dashboards
+- Related alerts and detectors
+- Service dependencies
+!Note:
+Navigator is a collection of resources that lets you monitor metrics and logs across various instances of your services and detect outliers in the instance population based on key performance indicators. Resources in a navigator include but are not limited to, a full list of entities, dashboards, related alerts and detectors, and service dependencies.
+
+--
+
+### All Navigators View
+![](img/navigators.png)
+
+!Note:
+To see all navigators, select Infrastructure from the Splunk Observability Cloud home page.
+On the Infrastructure Monitoring landing page, each card represents a navigator, corresponding to the services you monitor in Splunk Observability Cloud. A navigator card shows a count of instances in the population and highlights critical alerts linked to that population.
+
+---
+
+### Navigators In The Hierarchy
+![](img/hierarchy.png)
+Navigators act as a bridge between high-level organizational views and detailed metric data, enabling users to efficiently manage and monitor their infrastructure.
+
+!Note:
+Navigators are integral to the overall structure of Splunk Infrastructure Monitoring. They act as a bridge between high-level organizational views and detailed metric data, enabling users to efficiently manage and monitor their infrastructure. Their placement within the hierarchy highlights their importance in providing contextual and actionable insights across different layers of the infrastructure.
+
+---
+
+## Instance Monitoring Options
+In most navigators, you have two options to monitor your instances: 
+- Table view
+  - Default view for a navigator. Instances are sorted in descending order based on the relative value of the metric you select from the Color by drop-down menu.
+- Heat map view
+  - Each square has a color representing the relative value of the metric you select from the Color by drop-down menu.
+
+!Note:
+Table view
+This is the default view for a navigator. Instances are sorted in descending order based on the relative value of the metric you select from the Color by drop-down menu. You can reverse the sorting order or select different sorting criteria by clicking available column headers.
+You can’t add or remove columns from the table view. 
+Heat map view: Each square has a color representing the relative value of the metric you select from the Color by drop-down menu.
+
+The colors range from low values (lighter colors) to high values (darker colors).
+You can’t change the default colors for each Color‑by option.
+The navigator automatically sets the value range for each color.
+
+---
+
+## Drill-Down Capabilities
+![](img/drilld.png)
+You can drill down from a high-level view into specific components to investigate issues in detail. 
+
+For instance, starting from a high-level overview of the entire infrastructure, drill down into a particular host and further into a specific application running on that host.
+
+---
+
+## Demo
+### Navigators
+
+---
+
+## Discussion
+How to use Splunk Infrastructure Monitoring in order to solve problems?
+!Note:
+Webserver monitoring, Application monitoring, Database monitoring.
+
+---
+
+## Lab 1
+### Webserver Troubleshooting
+
+--
+
+## Lab Overview
+A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive view of your full stack environment. In this lab you will drill in to see problems with your Apache Web Server using relevant metrics and logs in real time.
+
+
+Lab link: https://app.eu0.signalfx.com
+
+Lab username: lab_User2024
+
+Lab password: jBvyWbPlUs
+
 </section>
 
-
 			</div>
-
 		</div>
 
 		<script src="../revealjs/dist/reveal.js"></script>
@@ -69,20 +128,22 @@ Slide 3
 		<script src="../revealjs/plugin/markdown/markdown.js"></script>
 		<script src="../revealjs/plugin/highlight/highlight.js"></script>
 		<script>
-
 			// Also available as an ES module, see:
 			// https://../revealjs.com/initialization/
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				center: true,
+				center: false,
 				hash: true,
-
+				slideNumber: true,
+				embedded: false,
+				width: 1000,
+ 				height: 620,
+				minScale: 1.0,
+  				maxScale: 1.0,
 				// Learn about plugins: https://../revealjs.com/plugins/
 				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
 			});
-
 		</script>
-
 	</body>
 </html>

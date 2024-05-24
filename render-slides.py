@@ -5,6 +5,8 @@ import os
 import json
 import re
 
+os.system("clear")
+
 def load_variables(json_file):
     with open(json_file, 'r') as f:
         variables = json.load(f)
@@ -40,8 +42,8 @@ def merge_files(file_list):
         with open("rendered/"+file_path, 'r') as file:
             merged_content += '<section data-markdown '
             merged_content += 'data-separator="---" data-separator-vertical="--"'
-            merged_content += 'data-background-image="img/bg.png" data-background-size="1000px"'
-            merged_content += 'data-separator-notes="^Note:"'
+            merged_content += 'data-background-image="img/bg.png" data-background-size="1200px"'
+            merged_content += 'data-separator-notes="!Note:"'
             merged_content += '>'
             merged_content += "\n" + file.read() +  "\n" + "</section>" + "\n"
     return merged_content
