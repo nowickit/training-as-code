@@ -96,7 +96,4 @@ Possible topics include: webserver monitoring, application monitoring, database 
 ## Lab Overview
 A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive view of your full-stack environment. In this lab, you will use navigators to drill into the problems with your Apache Web Server using relevant metrics and logs in real-time.
 
-
-Training environment: {{env_url}}
-Lab username: {{lab_user}}
-Lab password: {{lab_pass}}
+Lab guide: http://www.novvicki.pl/splunk/lab/lab.htm
