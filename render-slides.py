@@ -20,7 +20,7 @@ def replace_variables_in_file(file_path, variables):
         content = re.sub(r"\{\{" + re.escape(key) + r"\}\}", value, content)
     
     new_file_path = os.path.splitext(file_path)[0] + '_rendered.md'
-    new_file_path = new_file_path.replace("templates", "rendered")
+    new_file_path = new_file_path.replace("slides", "rendered")
     with open(new_file_path, 'w') as file:
         file.write(content)
     
@@ -69,7 +69,7 @@ def replace_sections_in_slides(merged_content, slides_file):
 
 if __name__ == "__main__":
     json_file = 'variables.json'
-    directory_to_process = 'templates'
+    directory_to_process = 'slides'
     sections_file = 'sections.json'
     slides_file = 'slides.htm'
 
