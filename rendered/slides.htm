@@ -25,6 +25,98 @@
 Tomasz Nowicki
 !Note:
 *Now that we know about the fundamentals about Splunk Infrastructure Monitoring, let's talk about the Built-in content, specifically about Infratstucture Navigator.*
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+## Introduction
+This is a super basic introduction that we don't want this time.
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+### Section objective
+In this section, you will learn how to use the navigator in Splunk Infrastructure Monitoring to orient and explore different layers of your tech stacks.
+!Note:
+Inform learners about the section objective.
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+### What is a navigator?
+A navigator is a collection of resources that lets you monitor metrics across various instances of integration and detect outliers among the instances of that integration.
+
+Resources include but are not limited to:
+![](img/navigator.png)
+
+- Dashboards
+- Related alerts and detectors
+- Service dependencies
+!Note:
+*Navigator is a collection of resources that lets you monitor metrics and logs across various instances of your services and detect outliers in the instance population based on key performance indicators. Resources in a navigator include but are not limited to, a full list of entities, dashboards, related alerts and detectors, and service dependencies.*
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+### All Navigators view
+![](img/navigators.png)
+
+!Note:
+*To see all navigators, select Infrastructure from the Splunk Observability Cloud home page. On the Infrastructure Monitoring landing page, each card represents a navigator, corresponding to the services you monitor in Splunk Observability Cloud. A navigator card shows a count of instances in the population and highlights critical alerts linked to that population.*
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+### Navigators in the hierarchy
+![](img/hierarchy.png)
+Navigators act as a bridge between high-level organizational views and detailed metric data, enabling users to manage and monitor their infrastructure efficiently.
+
+!Note:
+*Navigators are integral to the overall structure of Splunk Infrastructure Monitoring. They act as a bridge between high-level organizational views and detailed metric data, enabling users to manage and monitor their infrastructure efficiently. Their placement within the hierarchy highlights their importance in providing contextual and actionable insights across different layers of the infrastructure.*
+
+--
+
+### Dashboards vs. Navigators
+![](img/navvsdash.png)
+!Note:
+*A question that naturally arises is: What is the diffrence between a dashboard and a navigator. A dashboard is a set of charts that allow you to gain actionable insight into your system. Use dashboards to visualize and organize your data. A navigator is a set of screens that allow you to orient and explore your tech stack. To monitor instances you should use navigators.*
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+### Instance monitoring options
+In most navigators, you have two options to monitor your instances: 
+- Table view
+- Heat map view
+  
+!Note:
+*Table view is the default view for a navigator. Instances are sorted in descending order based on the relative value of the metric you select from the Color by drop-down menu. You can reverse the sorting order or select different sorting criteria by clicking available column headers. You can’t add or remove columns from the table view. In Heat map view, each square has a color representing the relative value of the metric you select from the Color by drop-down menu. The colors range from low values (lighter colors) to high values (darker colors). You can’t change the default colors for each Color‑by option. The navigator automatically sets the value range for each color.*
+
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+### Drill-down capabilities
+![](img/drilld.png)
+
+!Note:
+*You can drill down from a high-level view into specific components to investigate issues in detail. For instance, starting from a high-level overview of the entire infrastructure, drill down into a particular host and further into a specific application running on that host.*
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+## Demo
+### Customizing navigator display
+
+- Add filter
+- Customize time range
+- Color by
+- Group by
+- Find outliers
+
+!Note:
+*Now it is time to see how you can customize the navigator display. In this short demonstration we will cover adding filter, customizing time range, coloring by, grouping by and finding outliers.*
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+## Lab
+### Webserver Troubleshooting
+
+--
+
+## Lab Overview
+A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive view of your full-stack environment. In this lab, you will use navigators to drill into the problems with your Apache Web Server using relevant metrics and logs in real-time.
+
+Lab guide: http://www.novvicki.pl/splunk/lab/lab.htm
+</section>
+<section data-markdown data-separator="---" data-separator-vertical="--"data-background-image="img/bg.png" data-background-size="1200px"data-separator-notes="!Note:">
+# Built-in content
+Tomasz Nowicki
+!Note:
+*Now that we know about the fundamentals about Splunk Infrastructure Monitoring, let's talk about the Built-in content, specifically about Infratstucture Navigator.*
 ---
 
 ### Section objective
