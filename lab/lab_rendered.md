@@ -19,7 +19,7 @@ A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive 
   
 ## Lab Instructions
 
-  1. Log in to the Splunk Observability Cloud:
+  1. Log in to the Splunk Observability Cloud: 
      ``` 
      Username: tomek@novvicki.pl
      Password: syzqyb-najtis-sihFo8

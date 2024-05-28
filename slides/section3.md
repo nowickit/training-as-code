@@ -1,5 +1,5 @@
 ### What is a navigator?
-A navigator is a collection of resources that lets you monitor metrics across various instances of integration and detect outliers among the instances of that integration.
+A **navigator** is a collection of resources that lets you monitor metrics across various instances of integration and detect outliers among the instances of that integration.
 
 Resources include but are not limited to:
 ![](img/navigator.png)

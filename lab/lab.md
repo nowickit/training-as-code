@@ -19,10 +19,10 @@ A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive 
   
 ## Lab Instructions
 
-  1. Log in to the Splunk Observability Cloud:
+  1. Log in to the Splunk Observability Cloud: 
      ``` 
-     Username: {{lab_user}}
-     Password: {{lab_pass}}
+     Username: {{user}}
+     Password: {{password}}
      ```
   
      
@@ -38,7 +38,6 @@ A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive 
   
   4. Drill down on the navigator by clicking on it.
      
-
   5. You should see two EC2 instances.![infrastructure](infrastructure.png)
   
      
@@ -60,7 +59,7 @@ A powerful aspect of Splunk Infrastructure Monitoring is having a comprehensive 
      stress: info: [165552] successful run completed in 60s
      ```
      
-  
+    
      
   8. In the Splunk Observability Cloud, click on the `i-0fdc11a37b00a57de_eu-west-2_772081369355` instance. You should see an increase in the CPU utilization.![cpu01](cpu01.png)
   

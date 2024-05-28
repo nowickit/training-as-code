@@ -86,3 +86,4 @@ if __name__ == "__main__":
     merged_content = merge_files(rendered_sections_list)
     # Replace sections in slides.htm
     replace_sections_in_slides(merged_content, slides_file)
+    print("Slide deck has been successfully rendered.")
